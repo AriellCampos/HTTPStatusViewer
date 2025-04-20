@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTTP Status</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>HTTP Status</h1>
+
+      <form id="statusForm">
+        <div class="code-http">
+          <label for="code" class="title">HTTP Code:</label>
+          <input
+            type="number"
+            id="code"
+            name="code"
+            min="100"
+            max="999"
+            required
+          />
+        </div>
+
+        <div class="radio-group">
+          <label class="title">Query HTTP:</label>
+          <label
+            ><input type="radio" name="source" value="dog" checked />Dog</label
+          >
+          <label><input type="radio" name="source" value="cat" />Cat</label>
+          <label
+            ><input type="radio" name="source" value="both" />Both (Dog
+            and Cat)</label
+          >
+        </div>
+
+        <button type="submit" id="submitBtn" disabled>Consult</button>
+      </form>
+
+      <div class="result" id="result"></div>
+    </div>
+    <footer>
+      <p>
+        &copy; 2025 Todos os direitos reservados para
+        <strong>Ariel Campos</strong>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
